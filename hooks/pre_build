@@ -4,3 +4,4 @@ docker run --rm --privileged multiarch/qemu-user-static:register --reset
 docker buildx create --name muabuilder
 docker buildx use muabuilder
 docker buildx inspect --bootstrap
+docker buildx ls
