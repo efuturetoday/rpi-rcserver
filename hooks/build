@@ -1,3 +1,0 @@
-#!/bin/bash
-
-docker buildx build --platform linux/arm/v7 --file $DOCKERFILE_PATH -t $IMAGE_NAME --load .

@@ -1,6 +1,0 @@
-#!/bin/bash
-
-docker buildx create --name builder --driver docker-container --use
-docker buildx inspect --bootstrap
-docker buildx use builder
-docker buildx ls

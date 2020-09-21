@@ -4,11 +4,11 @@ const process = require('process');
 
 const config = {
     port: 8080,
-    pinTransmit: process.env.RC_PIN_TRANSMIT || 2,
-    pinReceive: process.env.RC_PIN_RECEIVE || 3,
-    protocol: process.env.RC_PROTOCOL || 0,
-    pulseLength: process.env.RC_PULSE_LENGTH || 180,
-    repeats: process.env.RC_REPEATS || 10
+    pinTransmit: parseInt(process.env.RC_PIN_TRANSMIT) || 2,
+    pinReceive: parseInt(process.env.RC_PIN_RECEIVE) || 3,
+    protocol: parseInt(process.env.RC_PROTOCOL) || 0,
+    pulseLength: parseInt(process.env.RC_PULSE_LENGTH) || 180,
+    repeats: parseInt(process.env.RC_REPEATS) || 10
 };
 
 console.info(config);
